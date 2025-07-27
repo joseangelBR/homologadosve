@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla Dinámica de Sistemas Homologados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tabla Dinámica de Sistemas Homologados</h1>
+    <div class="subtitle">Explora, filtra y ordena los sistemas registrados en Venezuela</div>
+  </header>
+  <section>
+    <p>
+      Esta tabla dinámica te permite visualizar, buscar y ordenar los sistemas homologados para facturación y gestión empresarial en Venezuela. Utiliza el buscador y los controles para encontrar la información que necesitas.
+    </p>
+    <p>
+      <strong>Nota:</strong> Los datos mostrados en esta tabla son de información pública y están publicados en la página oficial del SENIAT. Esta página solo ayuda a filtrar por nombre los datos estáticos allí presentes. Fuente oficial: <a href="https://declaraciones.seniat.gob.ve/portal/page/portal/MANEJADOR_CONTENIDO_SENIAT/03TRIBUTOS/3-5.html" target="_blank" rel="noopener">SENIAT - Sistemas Homologados</a>.
+    </p>
+    <p>
+      <strong>"Según la Providencia Administrativa N° SNAT/2024/000121, publicada en la Gaceta Oficial N° 43.032 del 19 de diciembre de 2024, solo están autorizados los Software Homologados y sus versiones específicas indicadas en la siguiente lista para la emisión de facturas y documentos fiscales." - SENIAT </strong>
+    </p>
+    <div class="last-update" id="lastUpdate"></div>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Buscar en toda la tabla...">
+      <select id="sortSelect"></select>
+      <button id="sortDirBtn" class="active" title="Cambiar orden">Ascendente ▲</button>
+    </div>
+    <div class="table-container">
+      <table id="dataTable"></table>
+      <div class="no-results" id="noResults" style="display:none;">No se encontraron coincidencias.</div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
