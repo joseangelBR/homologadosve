@@ -1,4 +1,4 @@
-# homologadosve
+# SISTEMAS HOMOLOGADOS PUBLICADOS POR EL SENIAT
 
 Pequeño proyecto para filtrar por nombre los sistemas homologados por el SENIAT
 
